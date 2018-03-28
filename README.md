@@ -1,3 +1,3 @@
 # almiradilm.github.io
-almiradilm
+Almira Dilmukhametova
 246632@niuitmo.ru
