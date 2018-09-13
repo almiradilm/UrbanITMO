@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+    <script src="../d3/d3.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <script>
+        // get data from remote server
+        // if all right - save it to global variable and draw table
+        d3.json("https://raw.githubusercontent.com/ScaryCrawler/scarycrawler.github.io/master/countries_2012.json",
+           (error, data) => (error !== null) ? console.log(error) : (dataset_Countries2012 = data, drawTableByOneYear())
+        );
+
+    </script>
+    <div id="FilterBy">
+        <label>Filter by: </label>
+
+        <input type="checkbox" name="Americas" value="Americas" id="cbAmericas"
+               class="checkBox" onchange="onCbChanged(value)">
+        <label for="cbAmericas">Americas</label>
+
+        <input type="checkbox" name="Africa" value="Africa" id="cbAfrica"
+               class="checkBox" onchange="onCbChanged(value)">
+        <label for="cbAfrica">Africa</label>
+
+        <input type="checkbox" name="Asia" value="Asia" id="cbAsia"
+               class="checkBox" onchange="onCbChanged(value)">
+        <label for="cbAsia">Asia</label>
+
+        <input type="checkbox" name="Europe" value="Europe" id="cbEurope"
+               class="checkBox" onchange="onCbChanged(value)">
+        <label for="cbEurope">Europe</label>
+
+        <input type="checkbox" name="Oceania" value="Oceania" id="cbOceania"
+               class="checkBox" onchange="onCbChanged(value)">
+        <label for="cbOceania">Oceania</label>
+    </div>
+    <div>
+        <label>Aggregation: </label>
+
+        <input type="radio" name="Aggregation" value="None" onclick="onRbChanged(value)" id="rbNone">
+        <label>None</label>
+
+        <input type="radio" name="Aggregation" value="Continent" onclick="onRbChanged(value)" id="rbContinent">
+        <label>By Continent</label>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+.focusedRow {
+    background-color: #ec0b43;
+    color: bisque;
+}
+
+.tableClass {
+    width: 100%;
+    border: solid 1px #a1abba;
+}
+
+.thead {
+    border: solid 1px #a1abba;
+}
+
+.customCell {
+    border: solid 1px #a1abba;
+}
+
+.tableHeaders {
+    border: solid 1px #a1abba;
+}
+
+.odd{background-color: white;}
+.even{background-color: gainsboro;}
+
+.caption {
+    border: solid 1px #a1abba;
+}
+
+.checkBox {
+    color: #1946ba;
+}
