@@ -1,27 +1,24 @@
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+<!DOCTYPE html>
 <html>
- <head>
- <meta charset=utf-8">
- <title>Пример веб-страницы</title>
-<head>
-<body onload="randomQuotes()">
-<h1> <font size="25pt" color="#1946ba" face="Open Sans"> First VIS101 Homework </font> </h1>
-<p> <font size="18pt" color="#000000" face="Open Sans"> Quote of the Day: </font> </p>
-<p id="quote"></p>
-<script>
-var quotes = 
-['All successful men and women are big dreamers. They imagine what their future could be, ideal in every respect, and then they work every day toward their distant vision, that goal or purpose. – Brian Tracy', 
-             'People often say that motivation doesn't last. Well, neither does bathing - that's why we recommend it daily. - Zig Ziglar', 
-             'Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.- Dale Carnegie', 
-             'Your time is limited, so don't waste it living someone else's life.-Steve Jobs', 
-             'I didn’t get there by wishing for it or hoping for it, but by working for it.-Estée Lauder']
-function randomQuotes() {
-var idx = Math.floor(Math.random() * quotes.length)
-document.getElementById('quote').innerHTML = quotes[idx]
-}
-</script>
-<body>
-</p>
-</body>
-</html>
 
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>QUOTE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <h1>Quote Of the Day</h1>
+    <div>
+        <h2 id="author" onmousedown="return false" onselectstart="return false"></h2>
+        <p id="warning"></p>
+        <blockquote id="quote"></blockquote>
+    </div>
+    <button id="butoon">Change quote of the day</button>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
