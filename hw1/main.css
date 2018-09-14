@@ -1,0 +1,40 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    color: #1946ba;
+}
+
+h2 {
+    text-decoration: none;
+    color: black;
+}
+
+h2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #1946ba;
+}
+
+div {
+    max-width: 960px;
+    min-height: 250px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+blockquote {
+    font-size: 20px;
+    border-left: 2px solid black;
+    padding: 10px;
+}
+
+button {
+    background-color: #ec0b43;
+    color: white;
+    padding: 10px 30px;
+    font-size: 14px;
+    border-radius: 15px;
+}
